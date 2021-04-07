@@ -1,14 +1,19 @@
 -- What data type would best represent:
 
 -- A term or phrase typed into a search box?
+# string 
 
 -- If a user is logged in?
+# bool
 
 -- A discount amount to apply to a user's shopping cart?
+# float
 
 -- Whether or not a coupon code is valid?
+# bool
 
 -- An email address typed into a registration form?
+# string
 
 -- The price of a product?
 #float
@@ -17,5 +22,7 @@
 #list within a list / dictionary
 
 -- The email addresses collected from a registration form?
+# dictionary or list
 
 -- Information about applicants to Codeup's data science program?
+# dictionary
