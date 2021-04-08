@@ -94,3 +94,18 @@ def is_prime(num):
             break
     else:
         return True
+
+#OR#
+
+def is_prime(num):
+    if type(num) != int:
+        return False
+    if num <= 0:
+        return False
+    if num == 1:
+        return True
+    if num >= 2:
+        for i in range(2, num):
+            if num % i == 0:
+                return False
+        return True
