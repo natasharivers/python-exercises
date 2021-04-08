@@ -203,3 +203,54 @@ for i in range(integer):
 #Ask if the user wants to continue.
 #Assume that the user will enter valid data.
 #Only continue if the user agrees to.
+
+while True:
+    posited_num = input('Please insert a positive integer:')
+    if posited_num.isdigit():
+        if int(posited_num) >0:
+            break
+proceed = input('do you want to proceed?: ')
+if proceed.lower().startwith('y'):
+    posited_num = int(posited_num)
+    print()
+    print('number | squared | cubed')
+    print('------ | ------- | -----')
+    for i in range(1, posited_num + 1):
+        i_squared = i ** 2
+        i_cubed = i ** 3
+        print(f'{i: 6} | {i_squared: 7} | {i_cubed: 5}')
+
+#5 Convert given number grades into letter grades.
+while True:
+    user_number = input('input the grade')
+    if user_number.isdigit():
+        user_number = int(user_number)
+        if user_number < 0 or user_number > 100:
+            continue
+        break
+if grade in range(60):
+    grade = 'F'
+elif grade in range(60, 67):
+    grade = 'D'
+elif grade in range(67, 80):
+    grade = 'C'
+elif grade in range(80, 88):
+    grade = 'B'
+else:
+    grade = 'A'
+
+bookshelf = [
+    {'title': 'ABC',
+    'author' : 'moon',
+    'genre': 'kids'},
+    {'title': 'dogs',
+    'author' : 'boxer',
+    'genre': 'veternary'}
+    {'title': 'favorite candy',
+    'author' : 'dr suess',
+    'genre': 'children'}]
+
+for book in bookshelf:
+    [print(key, ': ', book[key]) for key in book]
+    print('--------')
+
