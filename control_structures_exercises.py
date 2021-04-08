@@ -86,8 +86,8 @@ while i >= -10:
 i = 2
 while i < 1000000:
     print(i)
-    i += (i **2)
- # *****************INCORRECT!!!! ******   
+    i **= 2
+ 
 
 # Write a loop that uses print to create the output shown below.
 i = 100
@@ -102,7 +102,7 @@ for i in range(1,11):
     print(multiply_by, 'x', i, '=', multiply_by*i)
 
 #ii Create a for loop that uses print to create the output shown below.
-for i in range(1, n+1):
+for i in range(1,11):
     for j in range (1, i+1):
         print(i, end="")
     print()
@@ -113,9 +113,37 @@ for i in range(1, n+1):
 #(Hint: use the isdigit method on strings to determine this). 
 #Use a loop and the continue statement to output all the odd numbers between 1 and 50, 
 #except for the number the user entered.
+while True:
+    odd_num = input('Enter odd number between 1 and 50:')
+    if odd_num.isdigit() and int(odd_num) % 2 == 1 and int(odd_num) <= 50:
+            break
+ odd_num = int(odd_num)
+for num in range(1, 50, 2):
+    if num == odd_num:
+        print('Yikes! Skipping number: ', num)
+    else:
+        print('Here is an odd number: ', num)
+## KEEP TRYING TO FIGURE IT OUT- MADELINE INSTRUCTION ^^^^       
 
-#2D
-#2E
+#2D 
+while True:
+    odd_num = input('Enter odd number between 1 and 50:')
+    if odd_num.isdigit(): 
+        if int(odd_num) > 0:
+            break
+odd_num = int(odd_num)
+for num in range (0, odd_num +1):
+    print(num)
+
+
+#2E Write a program that prompts the user for a positive integer. 
+# Next write a loop that prints out the numbers from the number the user entered down to 1.
+while True:
+    odd_num = input('Enter odd number between 1 and 50:')
+    if odd_num.isdigit():
+        if int(odd_num) > 0:
+            break
+
 
 ##3 Fizzbuzz One of the most common interview questions for entry-level programmers is the FizzBuzz test. 
 #Developed by Imran Ghory, the test is designed to test basic looping and conditional logic skills.
