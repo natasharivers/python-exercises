@@ -245,7 +245,7 @@ bookshelf = [
     'genre': 'kids'},
     {'title': 'dogs',
     'author' : 'boxer',
-    'genre': 'veternary'}
+    'genre': 'veternary'},
     {'title': 'favorite candy',
     'author' : 'dr suess',
     'genre': 'children'}]
