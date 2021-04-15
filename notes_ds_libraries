@@ -60,3 +60,18 @@ Lineplot:
 -plt.plot(x,y)
 *** Jupyter Notebook: notes_lineplot***
 
+Scatterplots:
+-explore relationshiip or correlation between two numeric variables
+-plt.scatter()
+**** Jupyter Notebook: notes_scatterplot
+
+Histograms:
+-plt.hist()
+-creates bins for everything
+-need to know distribution of your data
+*** Jupyter NotebookL notes_histograms_barcharts
+
+Barplots:
+-plt.bar() #vertical
+-plt.barh() #horizonal
+-*** Jupyter NotebookL notes_histograms_barcharts
