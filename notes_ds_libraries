@@ -1,0 +1,62 @@
+#DIFFERENT LIBRARIES
+- used during the exploration phase of DS pipeline
+
+#matplotlib: 
+    -primary we will use
+    -data visualization
+
+#numpy: 
+    -linear algebra under the hood
+    -built under matplotlib
+
+#pandas:
+    -built under numpy
+
+#seaborn
+
+#data visualization:
+    -helps understand trends/data
+    -communicate interesting findings to others
+
+#DIFFERENT TYPES OF CHARTS:
+    -lineplot: 
+        *tell in a story over time
+        *shows trends in data
+    -scatter plots
+        *x and y coordinate
+        *corrilation
+    -histograms
+        *display of distribution
+        *putting things into a bin
+        *bell curves
+        *very critical on backend
+    -bar charts: 
+        *proportionality
+    -pie charts: 
+        *not the most useful
+        *tend to avoid
+
+examples:
+https://matplotlib.org/3.3.3/gallery/index.html
+https://matplotlib.org/3.3.3/tutorials/introductory/sample_plots.html
+animation: 
+
+visualization:
+-MUST be well labeled
+-title, labeled axis, legend (if applicable)
+
+IMPORTS:
+import matplotlib.pyplot as plt
+#other libraries:
+    -import numpy as np
+    -import math
+    -from random import randint
+    -import random
+    -import pandas as pd
+
+Lineplot:
+-plot y versus x as lines
+-trend line over time or over a series of values
+-plt.plot(x,y)
+*** Jupyter Notebook: notes_lineplot***
+
