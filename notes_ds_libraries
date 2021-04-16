@@ -75,3 +75,4 @@ Barplots:
 -plt.bar() #vertical
 -plt.barh() #horizonal
 -*** Jupyter NotebookL notes_histograms_barcharts
+
